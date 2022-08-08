@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap");
+
+.header {
+  font-family: "Kalam", cursive;
+  font-size: 2.5em;
+  color: #ffcb05ff;
+  text-shadow: 2px 2px 1px #3c5ba7ff, -2px -2px 1px #3c5ba7ff;
+}
+
+.grid-col {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}

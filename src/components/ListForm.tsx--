@@ -1,0 +1,37 @@
+/*CODIGO INCOMPLETADO POR ESO SE DEJÓ COMENTADO.
+
+import * as React from "react";
+import { ChangeEvent, FormEvent, useRef, useState } from "react";
+import { Pokemon } from "../types/data.model";
+import { Link } from "react-router-dom";
+import pkball from "../assets/images/pokeball.png";
+import pkballCol from "../assets/images/pokeball-color.png";
+import { badgeType } from "../utils/badgeType";
+
+import { type } from "../utils/bgColortypeObject";
+import { motion } from "framer-motion";
+
+interface Props {
+  addPokemon: (pokemon: Pokemon) => void;
+}
+
+type HandleInputChange = ChangeEvent<HTMLInputElement | HTMLTextAreaElement>;
+
+
+export const ListForm = ({ addPokemon }: Props) => {
+  const [pokemon, setPokemon] = React.useState<Pokemon[]>([]);
+  const id = useRef<HTMLInputElement>(null);
+
+  const handleNewPokemon = (e: FormEvent<HTMLFormElement>): any => {
+    e.preventDefault();
+    addPokemon(pokemon);
+    setPokemon(pokemon);
+    id.current?.focus();
+  };
+
+  const handleInputChange = ({ target: { name, value } }: HandleInputChange) =>
+    setPokemon({ ...pokemon, [name]: value });
+
+    Código incompleto... lo siento :(
+
+*/

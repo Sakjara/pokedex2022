@@ -1,0 +1,60 @@
+
+/*CODIGO INCOMPLETADO POR ESO SE DEJÓ COMENTADO.
+
+
+import * as React from "react";
+import { Pokemon } from "../types/data.model";
+
+interface ICartProps {
+  pokemon: Pokemon;
+  title?: string;
+}
+
+export const ListPoke = ({ title = "Listos Para la Batalla",}: ICartProps): JSX.Element => {
+  const [pokemons, setPokemons] = React.useState<Pokemon[]>([]);
+  
+  const getCurrentTimestamp = (): number => new Date().getTime();
+
+  const addPokemon = (pokemon: Pokemon): void =>
+  setPokemons([
+    ...pokemons,
+    { ...pokemon, id: getCurrentTimestamp() },
+  ]);
+  const deletePokemon = (id: number): void =>
+    setPokemons(pokemons.filter((pokemon: { id: number; }) => pokemon.id !== id));
+
+  return (
+    <div className="bg-dark" style={{ height: "100vh" }}>
+      <nav className="navbar navbar-dark bg-primary">
+        <div className="container">
+          <a className="navbar-brand" href="/">
+            <img src={} alt="React Logo" style={{ width: "4rem" }} />
+            {title}
+          </a>
+        </div>
+      </nav>
+
+      <main className="container p-4">
+        <div className="row">
+          <div className="col-md-4">
+            <ListForm addPokemon={addPokemon} />
+          </div>
+          <div className="col-md-8">
+            <div className="row">
+              <h6 className="text-light d-flex justify-content-end">
+                Total de Pokemones{" "}
+                <span className="badge bg-primary ms-2">{pokemons.length}</span>
+              </h6>
+
+              <ListForm tasks={pokemons} deleteATask={deletePokemon} />
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  );
+}; 
+
+codigo imcompleto... lo siento :(
+
+*/
